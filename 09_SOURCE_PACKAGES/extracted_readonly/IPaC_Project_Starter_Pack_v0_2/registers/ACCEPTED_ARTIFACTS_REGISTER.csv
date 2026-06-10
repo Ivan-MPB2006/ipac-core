@@ -1,0 +1,5 @@
+artifact_id,title,status,role_in_starter_pack,source_package,canonical_location
+PHASE1-NEED-ARTIFACT-IPAC-001,PHASE 1 — NEED ARTIFACT,accepted-candidate,root need / потребностный инвариант,IPaC_Phase1_NEED_ARTIFACT_Pack_v0_1.zip,/00_Need
+PHASE4-ARCHITECTURE-INVARIANTS-IPAC-001,PHASE 4 — ARCHITECTURE INVARIANTS,accepted-candidate,stable architecture core / архитектурное ядро,IPaC_Phase4_ARCHITECTURE_INVARIANTS_ARTIFACT_Pack_v0_1.zip,/04_Architecture
+PHASE3R-HYPOTHESIS-NORMALIZATION-IPAC-001,PHASE 3R — HYPOTHESIS REGISTRY NORMALIZATION,accepted-candidate,normalized hypothesis discipline / дисциплина гипотез,IPaC_Phase3R_HYPOTHESIS_REGISTRY_NORMALIZED_Pack_v0_1.zip,/02_Hypotheses
+PHASE8-LESSONS-LEARNED-IPAC-001,PHASE 8 — LESSONS LEARNED,accepted-candidate,system discipline / project rules / anti-patterns,IPaC_Phase8_LESSONS_LEARNED_ARTIFACT_Pack_v0_1.zip,/09_Project_Rules

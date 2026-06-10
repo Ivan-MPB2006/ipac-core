@@ -1,0 +1,5 @@
+item_id,title,status,reason,future_route,source_package
+PARK-IPAC-001,PHASE 4 — EXECUTION ARTIFACT,parked-source,wrong layer for Recovery Wave 1; useful late execution signal,/07_MVP/Execution_Candidates or /10_Recovery_Notes/Execution_Signals,IPaC_Phase4_EXECUTION_ARTIFACT_Pack_v0_1.zip
+PARK-IPAC-002,PHASE 3 — HYPOTHESIS REGISTRY v0.1,parked-source / delta-source,wide primary capture; ID semantics diverge from v0.2,use only through Phase 3R delta map,IPaC_Phase3_HYPOTHESIS_REGISTRY_Pack_v0_1.zip
+PARK-IPAC-003,PHASE 3 — HYPOTHESIS REGISTRY EXTENDED v0.2,source-base superseded by Phase 3R,working registry normalized by Phase 3R; not imported directly as starter core,reference source if needed; active core is Phase 3R,IPaC_Phase3_HYPOTHESIS_REGISTRY_EXTENDED_Pack_v0_2.zip
+PARK-IPAC-004,LinkedIn / Telegram / Pinterest / YouTube / site anchor / dashboard,execution candidates,channels and dashboards are not architecture core,review during MVP/MVI design only,derived from Phase 4 Execution and Phase 8

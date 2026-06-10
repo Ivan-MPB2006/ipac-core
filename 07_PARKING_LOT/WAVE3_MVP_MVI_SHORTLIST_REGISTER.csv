@@ -1,0 +1,5 @@
+candidate_id,candidate_name,wave3_status,priority,why_keep,why_not_launch_now,future_review_condition
+MVI-IPAC-003,Context Pack workflow,shortlist,critical,Tests context drift reduction and bootability,Requires new Project core restoration first,Review after Starter Pack v0.2 is booted in new Project
+MVI-IPAC-005,Need → Artifact → Review cycle,shortlist,critical,Tests core IPaC transformation loop,Needs Project discipline and artifact review rules active,Review after Project rules are imported
+MVI-IPAC-007,External reviewer feedback loop,defer,critical,Tests external need and field signal,High false validation risk,Needs field design and feedback capture protocol
+MVI-IPAC-009,AI-assisted concept recovery workflow,shortlist,high,Current recovery process already provides partial internal evidence,Risk of confusing AI synthesis with field evidence,Use as internal workflow test only

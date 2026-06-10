@@ -1,0 +1,9 @@
+risk_id,risk_name,description,manifestation,protection_rule
+CR-IPAC-001,concept inflation,"The concept expands to include everything around knowledge, AI, tools, communication and execution.",Every useful adjacent object is called IPaC.,Keep IPaC bounded by living meaning → knowledge → canon/trace → feedback/review/rebuild.
+CR-IPAC-002,architecture creep,Concept discussion starts producing architecture or governance design.,Entities and invariants are extended beyond recovered archive evidence.,"Concept Artifact may define concepts and model, not redesign architecture."
+CR-IPAC-003,execution pull,"Concept work is pulled into MVP, MVI, channels, dashboards or launch plans.",Publication channels start shaping the concept core.,Park execution signals; import only Projection as a general concept.
+CR-IPAC-004,false maturity,Internally coherent or beautiful concepts are treated as field-validated.,Meaning Bottleneck or intersubjectivity is described as proven externally.,State validation type; validated ≠ field validated.
+CR-IPAC-005,terminology fog,Too many terms obscure the central concept.,"Reader cannot distinguish Knowledge Clump, Artifact, Canon, Trace, Projection.",Maintain glossary with role and 'not-is' boundaries.
+CR-IPAC-006,metaphor overload,Strong metaphors become mistaken for operational concepts.,Protein-silicon resonance or semantic superconductivity enters core too early.,Mark metaphors as speculative or parked unless operationalized.
+CR-IPAC-007,tool capture,"The concept is reduced to Obsidian, Git, Codex, RAG or a workflow tool.",A tool becomes mistaken for IPaC itself.,Tools may support artifacts/trace/projections but are not IPaC.
+CR-IPAC-008,AI over-synthesis,AI creates a coherent but too complete concept artifact and hides uncertainty.,Speculative elements are polished into apparent maturity.,"Require maturity status, risks and uncertainty for each concept."

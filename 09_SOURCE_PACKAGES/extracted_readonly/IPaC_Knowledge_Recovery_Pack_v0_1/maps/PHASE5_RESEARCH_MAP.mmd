@@ -1,0 +1,38 @@
+flowchart TB
+    IPAC["IPaC Research Map"]
+    KE["Knowledge Engineering"]
+    CE["Context Engineering"]
+    HITL["Human-in-the-loop"]
+    OBS["Obsidian / Markdown"]
+    CANVAS["Obsidian Canvas"]
+    GIT["Git / Versioned Knowledge"]
+    SE["Software Engineering Lineage"]
+    DSS["Decision Support Systems"]
+    XAN["Ted Nelson / Xanadu"]
+    ES["Expert Systems"]
+    RAG["RAG / KG / Neo4j"]
+    CODEX["Codex / AI Agents"]
+    MCP["MCP"]
+    RISKS["Research Risks"]
+
+    IPAC --> KE
+    IPAC --> CE
+    IPAC --> HITL
+    IPAC --> OBS
+    OBS --> CANVAS
+    OBS --> GIT
+    IPAC --> SE
+    IPAC --> DSS
+    IPAC --> XAN
+    IPAC --> ES
+    IPAC --> RAG
+    IPAC --> CODEX
+    IPAC --> MCP
+    XAN --> RISKS
+    SE --> RISKS
+    RAG --> RISKS
+    MCP --> RISKS
+    CODEX --> RISKS
+
+    NOTE["Research support ≠ validation"]
+    NOTE --> IPAC

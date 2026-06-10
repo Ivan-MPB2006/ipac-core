@@ -1,0 +1,33 @@
+{
+  "package": "IPaC Knowledge Recovery Pack",
+  "version": "v0.1",
+  "date": "2026-06-08",
+  "status": "accepted-candidate",
+  "wave": "Wave 2 — Knowledge Recovery",
+  "included_phases": [
+    "PHASE 2 — CONCEPT ARTIFACT",
+    "PHASE 5 — RESEARCH FINDINGS",
+    "PHASE 6 — OPEN QUESTIONS"
+  ],
+  "dependency_context": [
+    "PHASE 1 — NEED ARTIFACT",
+    "PHASE 4 — ARCHITECTURE INVARIANTS",
+    "PHASE 3R — HYPOTHESIS NORMALIZATION",
+    "PHASE 8 — LESSONS LEARNED",
+    "PROJECT STARTER PACK v0.1"
+  ],
+  "field_validation_claimed": false,
+  "external_validation_claimed": false,
+  "mvp_defined": false,
+  "execution_plan_defined": false,
+  "concepts_count": 22,
+  "research_findings_count": 16,
+  "research_gaps_count": 12,
+  "open_questions_count": 22,
+  "contradictions_count": 10,
+  "assumptions_count": 9,
+  "validation_gaps_count": 6,
+  "terminology_risks_count": 10,
+  "parked_questions_count": 10,
+  "recommended_next_phase": "Wave 3 / Phase 7 — MVP Candidates"
+}

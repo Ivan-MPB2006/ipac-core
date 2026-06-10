@@ -1,0 +1,30 @@
+flowchart TB
+    OQ["Open Questions"]
+    NEED["Need Questions"]
+    CONCEPT["Concept Questions"]
+    ARCH["Architecture Questions"]
+    HYP["Hypothesis Questions"]
+    RESEARCH["Research Questions"]
+    VALID["Validation Questions"]
+    METHOD["Methodology Questions"]
+    TOOL["Tool / Infrastructure"]
+    EXEC["Execution / MVP / MVI"]
+    COMM["Communication / Field"]
+    GOV["Governance"]
+    TERM["Terminology"]
+
+    OQ --> NEED
+    OQ --> CONCEPT
+    OQ --> ARCH
+    OQ --> HYP
+    OQ --> RESEARCH
+    OQ --> VALID
+    OQ --> METHOD
+    OQ --> TOOL
+    OQ --> EXEC
+    OQ --> COMM
+    OQ --> GOV
+    OQ --> TERM
+
+    WARN["Open questions protect against false maturity"]
+    WARN --> OQ

@@ -1,0 +1,6 @@
+item_id,item_name,category,parking_reason,return_condition,storage_location
+PARK-W3-001,Phase 7R selection discipline,deferred_draft,Useful but premature as active decision,After new Project core restoration,Parking Lot / Candidate Review
+PARK-W3-002,Phase 7S test design,premature_test_design,Test design before Project restoration,After Candidate Review is re-opened,Deferred Drafts
+PARK-W3-003,Phase 7T controlled test run,premature_internal_run,Internal context makes evidence weak,Only after clean-room setup,Deferred Drafts
+PARK-W3-004,Clean-room boot test,future_test,Not current priority,After core restored in Project,Validation Backlog
+PARK-W3-005,Codex/MCP/RAG/Neo4j integration,execution_stack,Tool capture risk,After MVP/MVI selection and architecture review,Execution Candidates

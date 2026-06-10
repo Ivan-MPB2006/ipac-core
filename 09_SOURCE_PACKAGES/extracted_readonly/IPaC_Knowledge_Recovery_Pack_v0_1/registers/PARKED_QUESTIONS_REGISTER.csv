@@ -1,0 +1,11 @@
+parked_question_id,question,why_important,why_too_early_now,return_condition,storage_location
+PQ-IPAC-001,Technical architecture,Important for implementation.,Too early before uncertainty map and closure pack.,Accepted architecture invariants + prototype requirements.,architecture-backlog
+PQ-IPAC-002,Codex integration,Important future execution layer.,Risk of execution pull now.,Stable concept/architecture boundaries and starter pack import.,execution-candidate
+PQ-IPAC-003,MCP / agent orchestration,May support tool integration.,Needs technical validation and security thinking.,Clear use case and research check.,research-backlog
+PQ-IPAC-004,RAG / Neo4j implementation,May support trace/graph retrieval.,Tool capture risk.,Technical fit research and prototype need.,research-backlog
+PQ-IPAC-005,Public channels,Needed for field evidence later.,Not architecture and not current phase.,Field-test design phase.,execution-candidate
+PQ-IPAC-006,Dashboard,May be useful control surface.,Can become execution-as-architecture.,Governance mechanism review.,execution-candidate
+PQ-IPAC-007,LinkedIn / Telegram / Pinterest / YouTube,Potential projections.,Channel-driven thinking risk.,Communication/field validation phase.,execution-candidate
+PQ-IPAC-008,Business model,Important later.,Need/concept/research validation not done.,External need and field evidence.,MVP-backlog
+PQ-IPAC-009,Enterprise adoption,Strategic future question.,External organizational need not validated.,Research and field evidence.,research-backlog
+PQ-IPAC-010,Full MVP scope,Important for implementation.,Would force execution before closure.,Open Questions + Closure Pack + validation design.,MVP-backlog

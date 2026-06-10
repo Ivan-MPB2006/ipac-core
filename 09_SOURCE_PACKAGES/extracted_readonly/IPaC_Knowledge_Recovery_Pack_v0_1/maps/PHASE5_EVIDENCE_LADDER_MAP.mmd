@@ -1,0 +1,13 @@
+flowchart TB
+    L1["1 Mentioned"]
+    L2["2 Discussed"]
+    L3["3 Used as Analogy"]
+    L4["4 Used as Conceptual Support"]
+    L5["5 Used as Architectural Support"]
+    L6["6 Artifact-Supported"]
+    L7["7 Field-Tested"]
+    L8["8 Externally Validated"]
+    L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7 --> L8
+    WARN["No Phase 5 finding reaches Field-Tested or Externally Validated"]
+    WARN --> L7
+    WARN --> L8

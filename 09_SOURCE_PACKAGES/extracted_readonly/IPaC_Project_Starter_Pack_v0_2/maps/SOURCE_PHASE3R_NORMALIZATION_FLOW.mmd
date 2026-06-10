@@ -1,0 +1,10 @@
+flowchart TD
+    V02[Phase 3 v0.2 Extended Registry] --> CORE[Normalized Core Register]
+    V01[Phase 3 v0.1 Wide Capture] --> DELTA[Delta Extraction]
+    DELTA --> CORE
+    CORE --> VAL[Validation Scope Split]
+    VAL --> ART[Artifact/Internal Validation]
+    VAL --> FIELD[Field Validation: Not Yet Tested]
+    CORE --> EXEC[Execution Hypotheses Parked]
+    CORE --> RISK[Dangerous / Risk-Flagged Review]
+    CORE --> NEXT[Phase 8 Lessons Learned]

@@ -1,0 +1,20 @@
+{
+  "package_name": "IPaC_Obsidian_Vault_Structure_v0_1_Pack",
+  "created_date": "2026-06-09",
+  "status": "Obsidian/Git Knowledge Base preparation, not execution",
+  "canon_status": "CANON_ACCEPTED_WITH_NOTES",
+  "includes_raw_source_zips": true,
+  "source_zips": [
+    "IPaC_Project_Starter_Pack_v0_2.zip",
+    "IPaC_Knowledge_Recovery_Pack_v0_1.zip",
+    "IPaC_Wave3_CLOSURE_Pack_v0_1.zip"
+  ],
+  "guardrails": [
+    "no MVP/MVI execution",
+    "no Codex implementation",
+    "no RAG/Neo4j design",
+    "no automation",
+    "no Wave 4 import into canon without review",
+    "no old chats as source-of-truth"
+  ]
+}

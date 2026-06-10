@@ -1,0 +1,9 @@
+trace_id,source_package,imported_into,status,note
+TRACE-PHASE1-NEED-ARTIFACT-IPAC-001,IPaC_Phase1_NEED_ARTIFACT_Pack_v0_1.zip,Starter Pack v0.1,accepted-candidate,root need / потребностный инвариант
+TRACE-PHASE4-ARCHITECTURE-INVARIANTS-IPAC-001,IPaC_Phase4_ARCHITECTURE_INVARIANTS_ARTIFACT_Pack_v0_1.zip,Starter Pack v0.1,accepted-candidate,stable architecture core / архитектурное ядро
+TRACE-PHASE3R-HYPOTHESIS-NORMALIZATION-IPAC-001,IPaC_Phase3R_HYPOTHESIS_REGISTRY_NORMALIZED_Pack_v0_1.zip,Starter Pack v0.1,accepted-candidate,normalized hypothesis discipline / дисциплина гипотез
+TRACE-PHASE8-LESSONS-LEARNED-IPAC-001,IPaC_Phase8_LESSONS_LEARNED_ARTIFACT_Pack_v0_1.zip,Starter Pack v0.1,accepted-candidate,system discipline / project rules / anti-patterns
+TRACE-PARK-IPAC-001,IPaC_Phase4_EXECUTION_ARTIFACT_Pack_v0_1.zip,Parked Items Register,parked-source,wrong layer for Recovery Wave 1; useful late execution signal
+TRACE-PARK-IPAC-002,IPaC_Phase3_HYPOTHESIS_REGISTRY_Pack_v0_1.zip,Parked Items Register,parked-source / delta-source,wide primary capture; ID semantics diverge from v0.2
+TRACE-PARK-IPAC-003,IPaC_Phase3_HYPOTHESIS_REGISTRY_EXTENDED_Pack_v0_2.zip,Parked Items Register,source-base superseded by Phase 3R,working registry normalized by Phase 3R; not imported directly as starter core
+TRACE-PARK-IPAC-004,derived from Phase 4 Execution and Phase 8,Parked Items Register,execution candidates,channels and dashboards are not architecture core

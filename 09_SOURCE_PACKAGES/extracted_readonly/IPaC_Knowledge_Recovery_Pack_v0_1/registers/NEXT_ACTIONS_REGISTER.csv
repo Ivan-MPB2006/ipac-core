@@ -1,0 +1,23 @@
+question_id,next_action_type,priority,import_status,question_text
+OQ-IPAC-001,needs_field_evidence,critical,import_to_open_questions,"Does IPaC answer a real external need, or primarily an internal intellectual/systemic pain?"
+OQ-IPAC-002,needs_hypothesis_test,critical,import_to_hypothesis_review,Can living meaning be translated into manageable artifacts without killing its living core?
+OQ-IPAC-003,needs_expert_review,high,import_to_open_questions,What minimal structure is required for a Knowledge Clump to remain alive and portable?
+OQ-IPAC-004,needs_prototype_mvp,critical,import_to_architecture_review,Is the Canon / Trace / Review / Decision / Controlled Rebuild circuit actually workable in practice?
+OQ-IPAC-005,needs_methodology_review,high,import_to_open_questions,How to prevent Review / Decision / Trace discipline from becoming bureaucracy?
+OQ-IPAC-006,needs_hypothesis_test,high,import_to_hypothesis_review,Can Human + AI collaboration reliably hold complexity better than an ordinary long chat?
+OQ-IPAC-007,needs_hypothesis_test,critical,import_to_hypothesis_review,Can the AI Mentor Layer transfer the working mode to a new Project or agent?
+OQ-IPAC-008,needs_prototype_mvp,high,import_to_research_backlog,Can Obsidian / Git / Project serve as stable memory without creating tool capture?
+OQ-IPAC-009,needs_research,critical,import_to_research_backlog,What is the boundary between IPaC and Knowledge Engineering?
+OQ-IPAC-010,needs_research,high,import_to_research_backlog,What is the boundary between IPaC and Context Engineering?
+OQ-IPAC-011,needs_field_evidence,critical,import_to_open_questions,Does the phrase Meaning Bottleneck travel outside the internal project context?
+OQ-IPAC-012,needs_expert_review,high,import_to_terminology_review,Does the term Knowledge Clump make sense to external reviewers?
+OQ-IPAC-013,needs_methodology_review,critical,import_to_open_questions,How to distinguish research support from validation in daily project work?
+OQ-IPAC-014,needs_hypothesis_test,critical,import_to_hypothesis_review,What field evidence would be sufficient to upgrade core hypotheses?
+OQ-IPAC-015,needs_prototype_mvp,high,import_to_open_questions,Can field feedback be turned into controlled rebuild rather than chaos?
+OQ-IPAC-016,park_for_later,medium,park_for_later,Which parts of the former execution work are parked signals and which are reusable mechanisms?
+OQ-IPAC-017,park_for_later,medium,park_for_later,When should Codex / execution agents be connected without damaging concept boundaries?
+OQ-IPAC-018,needs_research,medium,import_to_research_backlog,"Does IPaC require RAG / Knowledge Graph / Neo4j, or are these only possible tools?"
+OQ-IPAC-019,needs_terminology_clarification,high,import_to_terminology_review,Which terms are working terms and which are public terms?
+OQ-IPAC-020,park_for_later,high,import_to_open_questions,What should be parked until after Wave 2 closure?
+OQ-IPAC-021,needs_field_evidence,high,import_to_open_questions,Can IPaC be explained without excessive simplification?
+OQ-IPAC-022,needs_architecture_review,critical,import_to_open_questions,What is the next correct phase after Phase 6?

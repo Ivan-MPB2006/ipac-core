@@ -1,0 +1,27 @@
+flowchart TB
+    U["Uncertainty"]
+    Q["Open Question"]
+    C["Contradiction"]
+    A["Assumption"]
+    VG["Validation Gap"]
+    TR["Terminology Risk"]
+    P["Parked Question"]
+
+    U --> Q
+    U --> C
+    U --> A
+    U --> VG
+    U --> TR
+    U --> P
+
+    Q --> R["Needs research"]
+    Q --> ER["Needs expert review"]
+    Q --> TC["Needs terminology clarification"]
+    Q --> AR["Needs architecture review"]
+    Q --> HT["Needs hypothesis test"]
+    Q --> FE["Needs field evidence"]
+    Q --> PM["Needs prototype / MVP"]
+    Q --> PARK["Park for later"]
+
+    FE --> CLOSURE["Wave 2 Closure / Recovery Pack"]
+    PARK --> CLOSURE

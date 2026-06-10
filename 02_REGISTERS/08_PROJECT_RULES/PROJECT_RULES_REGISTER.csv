@@ -1,0 +1,20 @@
+rule_id,rule_type,rule_statement
+MR-IPAC-001,mandatory,"Every artifact must state phase, artifact_type, scope, exclusions and validation type."
+MR-IPAC-002,mandatory,Validated means internal/artifact-supported unless field-tested or externally-validated is explicitly stated.
+MR-IPAC-003,mandatory,Execution candidates must not be placed in architecture core.
+MR-IPAC-004,mandatory,Accepted knowledge must be externalized from chat into artifact/register/status.
+MR-IPAC-005,mandatory,Hypothesis status must not be upgraded without evidence.
+WR-IPAC-001,warning,"If a beautiful formula appears, mark it as formula/candidate until validated."
+WR-IPAC-002,warning,"If channels dominate discussion, check for channel-driven thinking."
+WR-IPAC-003,warning,"If new documents multiply, check for document proliferation."
+WR-IPAC-004,warning,"If the model sounds very confident, verify phase and layer alignment."
+SR-IPAC-001,stop,"If Need, Concept, Architecture and Execution appear in one artifact request, stop and split layers."
+SR-IPAC-002,stop,"If an execution plan is requested inside architecture extraction, stop and reclassify."
+SR-IPAC-003,stop,"If raw feedback is being treated as conclusion, stop and route to review."
+RR-IPAC-001,review,"Every major correction must become a lesson, rule or normalization note."
+RR-IPAC-002,review,Every speculative concept must be reviewed before canonization.
+RR-IPAC-003,review,Every parked source must be periodically reviewed or discarded.
+AR-IPAC-001,artifact,Create a new document only when it closes a real gap or establishes an accepted artifact boundary.
+AR-IPAC-002,artifact,Update an existing artifact when the change belongs to the same layer and scope.
+AR-IPAC-003,artifact,"Do not create a document when a register row, status update or recovery note is enough."
+AR-IPAC-004,artifact,Park valuable wrong-layer material instead of deleting or canonizing it.

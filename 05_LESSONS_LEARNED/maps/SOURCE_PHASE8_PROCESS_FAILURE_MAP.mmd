@@ -1,0 +1,26 @@
+flowchart TB
+    OLD["Old long chat"]
+    RES["Creative resonance"]
+    ART["Artifact fixation"]
+    DRIFT["Context drift"]
+    MIX["Level mixing"]
+    FALSE["False coherence"]
+    VALID["False validation risk"]
+    NORM["Normalization / Phase correction"]
+    RULES["Project rules"]
+    NEW["New Project"]
+
+    OLD --> RES
+    RES --> ART
+    OLD --> DRIFT
+    DRIFT --> MIX
+    MIX --> FALSE
+    FALSE --> VALID
+    VALID --> NORM
+    ART --> NORM
+    NORM --> RULES
+    RULES --> NEW
+
+    STOP["Stop rule:<br/>if Need + Architecture + Execution mix,<br/>split artifacts"]
+    MIX --> STOP
+    STOP --> NORM

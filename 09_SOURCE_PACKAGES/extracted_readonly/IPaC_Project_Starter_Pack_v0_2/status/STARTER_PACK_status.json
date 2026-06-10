@@ -1,0 +1,38 @@
+{
+  "package": "IPaC Project Starter Pack",
+  "version": "v0.2",
+  "date": "2026-06-08",
+  "status": "accepted-candidate starter context",
+  "includes_wave1_core_recovery": true,
+  "includes_wave2_knowledge_recovery": true,
+  "accepted_candidate_phases": [
+    "PHASE 1",
+    "PHASE 2",
+    "PHASE 3R",
+    "PHASE 4",
+    "PHASE 5",
+    "PHASE 6",
+    "PHASE 8"
+  ],
+  "field_validation_claimed": false,
+  "external_validation_claimed": false,
+  "mvp_defined": false,
+  "execution_plan_defined": false,
+  "technical_architecture_defined": false,
+  "recommended_next_phase": "Wave 3 / Phase 7 — MVP Candidates",
+  "counts": {
+    "concepts": 22,
+    "research_findings": 16,
+    "research_gaps": 12,
+    "open_questions": 22,
+    "contradictions": 10,
+    "assumptions": 9,
+    "validation_gaps": 6,
+    "terminology_risks": 10,
+    "parked_questions": 10,
+    "hypotheses": 33,
+    "rules": 19,
+    "antipatterns": 9,
+    "invariants": 35
+  }
+}

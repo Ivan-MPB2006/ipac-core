@@ -1,0 +1,24 @@
+{
+  "package": "IPaC_Wave3_CLOSURE_Pack_v0_1",
+  "date": "2026-06-08",
+  "wave": "Wave 3",
+  "wave_name": "Validation / MVP Candidate Recovery",
+  "closure_status": "closed_as_candidate_recovery",
+  "accepted_core_artifact": "PHASE 7 — MVP/MVI Candidates Artifact",
+  "phase7_status": "accepted-candidate",
+  "phase7r_status": "deferred-draft",
+  "phase7s_status": "parked-premature",
+  "phase7t_status": "parked-premature",
+  "execution_plan_created": false,
+  "mvp_selected": false,
+  "mvi_launched": false,
+  "field_validation_claimed": false,
+  "clean_room_test_required_now": false,
+  "next_coordinate": "New Project Core Restoration",
+  "recommended_inputs": [
+    "IPaC_Project_Starter_Pack_v0_2.zip",
+    "IPaC_Knowledge_Recovery_Pack_v0_1.zip",
+    "IPaC_Wave3_CLOSURE_Pack_v0_1.zip"
+  ],
+  "guardrail": "Do not return to MVI/MVP design until project core is restored in the new Project."
+}

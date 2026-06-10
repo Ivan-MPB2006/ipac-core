@@ -1,0 +1,4 @@
+artifact_id,phase,artifact_name,version,status,role,source_package
+W2-P2,Phase 2,Concept Artifact,v0.2,accepted-candidate,concept core and glossary,IPaC_Phase2_CONCEPT_ARTIFACT_Pack_v0_2.zip
+W2-P5,Phase 5,Research Findings,v0.1,accepted-candidate,research map and source limits,IPaC_Phase5_RESEARCH_FINDINGS_ARTIFACT_Pack_v0_1.zip
+W2-P6,Phase 6,Open Questions,v0.1,accepted-candidate,uncertainty map and validation gaps,IPaC_Phase6_OPEN_QUESTIONS_ARTIFACT_Pack_v0_1.zip

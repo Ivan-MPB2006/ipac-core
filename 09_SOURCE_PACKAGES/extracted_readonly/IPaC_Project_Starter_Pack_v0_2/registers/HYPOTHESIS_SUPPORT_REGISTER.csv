@@ -1,0 +1,10 @@
+hypothesis_id,hypothesis_name,supporting_findings,support_type,external_check_needed,false_confidence_risk
+HYP-IPAC-001,Meaning Bottleneck,RA-IPAC-001; RA-IPAC-008; RA-IPAC-012,indirect support,No field evidence yet; needs field validation.,High risk of false maturity.
+HYP-IPAC-002,Organizations need information production engineering,RA-IPAC-003; RA-IPAC-016; RA-IPAC-012,indirect support,Needs external organizational research/interviews.,May overlap existing fields.
+HYP-IPAC-003,Knowledge Clumps are more than document collections,RA-IPAC-002; RA-IPAC-003; RA-IPAC-014,analogy support,Needs expert/user validation.,Terminology may not travel.
+HYP-IPAC-004,"Living knowledge requires use, feedback and rebuild",RA-IPAC-005; RA-IPAC-009; RA-IPAC-015,indirect support,Needs field/use evidence.,Review/trace may become bureaucracy.
+HYP-IPAC-007,Bootability is essential,RA-IPAC-007; RA-IPAC-008; RA-IPAC-015,direct support,Needs new Project boot test.,Toolchain may not be enough.
+HYP-IPAC-008,AI Mentor Layer preserves collaboration,RA-IPAC-001; RA-IPAC-008; RA-IPAC-009,indirect support,Needs portation/new Project validation.,Depends on model behavior.
+HYP-IPAC-014,MVI is correct first validation form,RA-IPAC-006; RA-IPAC-011,inspiration only,Requires field/MVI test.,Execution pull risk.
+HYP-IPAC-020,Mermaid diagrams are comprehension artifacts,RA-IPAC-014; RA-IPAC-007,direct support,Needs versioning discipline.,Diagrams may drift.
+HYP-IPAC-024,MCP as connectivity layer,RA-IPAC-013,inspiration only,Needs technical validation.,Premature automation risk.

@@ -1,0 +1,12 @@
+source_or_direction,what_it_gives,what_it_does_not_give,overreach_conclusion,next_check_needed,usable_in_starter_pack,parked_source_status
+Karpathy LLM Wiki,LLM literacy direction.,Does not validate IPaC.,LLM expertise proves IPaC.,External source review needed.,"yes, as parked/source pointer only",parked-source until audited
+Ted Nelson / Project Xanadu,Historical hypertext analogy.,Does not prove Knowledge Clumps.,Xanadu = IPaC proof.,Historical review needed.,"yes, as analogy with warning",research map
+Expert Systems,Knowledge representation comparison.,Does not validate living knowledge circulation.,Expert systems prove IPaC.,Historical/methodological review.,"yes, as boundary source",research map
+Decision Support Systems,Decision-support analogy.,Does not define IPaC lifecycle.,DSS = IPaC.,Methodological review.,"yes, cautiously",research map
+Situation Centers,Situational awareness analogy.,Does not make dashboards architecture.,Dashboard = architecture.,Boundary review.,park as execution analogy,parked-source
+Obsidian,Tool signal for Markdown/local-first artifacts.,Does not equal IPaC.,Obsidian vault = IPaC.,Practical toolchain test.,yes as tool support,concept/tool support
+Context Engineering,Conceptual support for context packs.,Does not define entire system.,Context engineering = IPaC.,Deep research.,yes as research gap,research gaps
+Codex,Execution agent signal.,Does not validate concept.,Codex automation = IPaC.,Execution validation later.,park,parked-source
+RAG / Knowledge Graph / Neo4j,Technical possibilities for retrieval/graph.,Does not prove architecture.,Graph/RAG = living knowledge.,Technical validation.,park,research gaps
+AI-native SDLC,Lifecycle/engineering analogy.,Does not prove transfer.,AI SDLC validates IPaC.,Deep research.,"yes, with limitation",research map
+MCP,Tool integration possibility.,Not validated.,MCP needed now.,Technical/security validation.,park,parked-source

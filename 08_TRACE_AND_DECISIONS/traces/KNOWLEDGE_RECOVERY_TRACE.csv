@@ -1,0 +1,6 @@
+trace_id,source_artifact,target_layer,import_action,status
+TRACE-W2-001,Phase 2 Concept Artifact,/03_Concepts,import concept core and glossary,accepted-candidate
+TRACE-W2-002,Phase 5 Research Findings,/05_Research,import research map/gaps/risks/source limits,accepted-candidate
+TRACE-W2-003,Phase 6 Open Questions,/08_Open_Questions,import uncertainty map/contradictions/assumptions/validation gaps,accepted-candidate
+TRACE-W2-004,Phase 6 Parked Questions,/10_Recovery_Notes,park premature architecture/execution/business questions,parked
+TRACE-W2-005,Phase 5 Tool/Execution Signals,/10_Recovery_Notes,park tool and execution signals until later phases,parked

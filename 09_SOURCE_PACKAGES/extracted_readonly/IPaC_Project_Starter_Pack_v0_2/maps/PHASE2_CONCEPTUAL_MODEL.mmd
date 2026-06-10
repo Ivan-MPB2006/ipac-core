@@ -1,0 +1,27 @@
+flowchart TB
+    LM["Living Meaning<br/>Живой смысл"]
+    KC["Knowledge Clump<br/>Знаниевый сгусток"]
+    KA["Knowledge Artifact<br/>Знаниевый артефакт"]
+    CANON["Canon<br/>Канон"]
+    TRACE["Trace<br/>След / трасса"]
+    FB["Feedback / Evidence<br/>Обратная связь / свидетельства"]
+    REVIEW["Review<br/>Разбор / ревью"]
+    DECISION["Decision<br/>Решение"]
+    REBUILD["Controlled Rebuild<br/>Управляемая пересборка"]
+    UC["Updated Canon<br/>Обновлённый канон"]
+
+    LM --> KC --> KA --> CANON
+    CANON <--> TRACE
+    TRACE --> FB
+    FB --> REVIEW --> DECISION --> REBUILD --> UC
+    UC --> KC
+
+    HS["Human Subject<br/>Человеческий субъект"]
+    AI["AI Mentor<br/>Методологический проводник"]
+    HS <--> AI
+    HS --> LM
+    AI --> KA
+    AI --> REVIEW
+
+    NOTE["Conceptual model only<br/>not technical architecture / not execution plan"]
+    NOTE --> LM

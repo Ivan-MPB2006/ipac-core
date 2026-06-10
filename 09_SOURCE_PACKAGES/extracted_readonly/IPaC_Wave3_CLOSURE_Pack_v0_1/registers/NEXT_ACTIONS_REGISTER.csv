@@ -1,0 +1,6 @@
+action_id,next_action,type,priority,input_artifacts,output_expected,status
+NEXT-001,Create/open new ChatGPT Project,project_setup,critical,Starter Pack v0.2,Project shell ready,pending
+NEXT-002,Run New Project Restoration Boot Prompt,boot,critical,NEW_PROJECT_RESTORATION_BOOT_PROMPT.md,Boot report,pending
+NEXT-003,Import Project core documents,import,critical,Starter Pack v0.2; Knowledge Recovery Pack v0.1,Core restored,pending
+NEXT-004,Review active open questions and parking lot,review,high,Phase 6; Wave 3 Closure,Updated project rules,pending
+NEXT-005,Defer MVI selection until core restored,guardrail,critical,Wave 3 Closure,No premature execution,active

@@ -1,0 +1,9 @@
+artifact_id,phase,artifact_name,version,status,role,source_package
+P1,Phase 1,Need Artifact,v0.1,accepted-candidate,root need,IPaC_Phase1_NEED_ARTIFACT_Pack_v0_1.zip
+P2,Phase 2,Concept Artifact,v0.2,accepted-candidate,concept core and glossary,IPaC_Phase2_CONCEPT_ARTIFACT_Pack_v0_2.zip
+P3R,Phase 3R,Hypothesis Registry Normalization,v0.1,accepted-candidate,normalized hypothesis registry,IPaC_Phase3R_HYPOTHESIS_REGISTRY_NORMALIZED_Pack_v0_1.zip
+P4,Phase 4,Architecture Invariants,v0.1,accepted-candidate,stable architecture core,IPaC_Phase4_ARCHITECTURE_INVARIANTS_ARTIFACT_Pack_v0_1.zip
+P5,Phase 5,Research Findings,v0.1,accepted-candidate,research map and source limits,IPaC_Phase5_RESEARCH_FINDINGS_ARTIFACT_Pack_v0_1.zip
+P6,Phase 6,Open Questions,v0.1,accepted-candidate,uncertainty map and validation gaps,IPaC_Phase6_OPEN_QUESTIONS_ARTIFACT_Pack_v0_1.zip
+P8,Phase 8,Lessons Learned,v0.1,accepted-candidate,project discipline and anti-patterns,IPaC_Phase8_LESSONS_LEARNED_ARTIFACT_Pack_v0_1.zip
+KR,Wave 2,Knowledge Recovery Pack,v0.1,accepted-candidate,Wave 2 closure,IPaC_Knowledge_Recovery_Pack_v0_1.zip

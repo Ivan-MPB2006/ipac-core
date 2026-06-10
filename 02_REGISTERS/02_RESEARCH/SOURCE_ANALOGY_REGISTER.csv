@@ -1,0 +1,18 @@
+source_id,name,type,supports,does_not_support,limitations,checked_or_mentioned,risk_of_overinterpretation,confidence
+SRC-IPAC-001,Karpathy LLM Wiki,direct_source,LLM literacy / AI-native context awareness,Does not validate IPaC or meaning bottleneck.,Not checked here.,mentioned,high,low
+SRC-IPAC-002,Ted Nelson / Project Xanadu,historical_parallel,Hypertext/linking inspiration,Does not prove Knowledge Clumps or IPaC.,Analogy risk.,mentioned,medium,medium-low
+SRC-IPAC-003,Knowledge Engineering,open_research_thread,Knowledge can be engineered and represented,Does not cover living knowledge circulation as IPaC defines it.,Field boundary unclear.,discussed,medium,medium
+SRC-IPAC-004,Expert Systems,historical_parallel,Knowledge representation precedent,Does not validate human-AI intersubjectivity.,Overclaiming risk.,discussed,medium,medium
+SRC-IPAC-005,Decision Support Systems,architecture_signal,Decision/review support framing,Does not validate full IPaC lifecycle.,Partial support only.,discussed,medium,medium
+SRC-IPAC-006,Situation Centers / Dashboards,analogy,Situational awareness/control analogy,Dashboard mechanics are not architecture.,Execution pull risk.,mentioned/discussed,medium-high,medium-low
+SRC-IPAC-007,Obsidian,tool_reference,Markdown/local-first artifact handling,Obsidian is not IPaC.,Tool capture risk.,used/discussed,medium-high,medium-high
+SRC-IPAC-008,Context Engineering,conceptual_inspiration,Context-pack/boot/handoff thinking,Does not define whole IPaC.,Concept overlap risk.,discussed,medium,medium
+SRC-IPAC-009,Human-in-the-loop,architecture_signal,Human-AI role separation,Does not specify IPaC method.,Generic principle risk.,discussed,low,high
+SRC-IPAC-010,RAG / Knowledge Graph / Neo4j,tool_reference,Retrieval/graph implementation paths,Not IPaC; not concept proof.,Tool-driven conclusion risk.,mentioned,high,low-medium
+SRC-IPAC-011,Codex / AI Execution Agents,execution_signal,Possible execution layer,Does not validate concept or architecture.,Execution pull risk.,discussed,high,medium
+SRC-IPAC-012,AI-native SDLC,conceptual_inspiration,Lifecycle and engineering analogy,Not a direct source for IPaC.,Analogy overreach risk.,discussed,medium,medium
+SRC-IPAC-013,MCP,tool_reference,Future tool integration idea,Not validated in project.,Premature automation risk.,mentioned,high,low
+SRC-IPAC-014,Obsidian Canvas,tool_reference,Visual knowledge mapping signal,Canvas is not concept.,Tool capture risk.,used/discussed,medium,medium-high
+SRC-IPAC-015,Git / GitHub,tool_reference,Versioned knowledge/trace,Tool does not validate living knowledge claims.,Tool capture risk.,discussed,medium,medium-high
+SRC-IPAC-016,Brooks / Conceptual Integrity,historical_parallel,Conceptual integrity analogy,Does not prove IPaC claims.,Authority borrowing risk.,discussed,medium-high,medium
+SRC-IPAC-017,Software engineering lineage,historical_parallel,Discipline transfer line,Transfer requires validation; not direct evidence.,Historical romanticism risk.,discussed,medium-high,medium

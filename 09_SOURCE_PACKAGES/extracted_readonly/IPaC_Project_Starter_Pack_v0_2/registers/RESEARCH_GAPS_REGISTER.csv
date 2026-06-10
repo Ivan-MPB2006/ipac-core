@@ -1,0 +1,13 @@
+gap_id,description,why_important,risk,related_hypothesis,related_concept,recommended_check_type,priority
+RG-IPAC-001,Karpathy LLM Wiki not audited,Ground LLM-related claims.,Name-dropping / authority borrowing.,AI Mentor / Context Engineering,AI Mentor; Context Pack,external source review,medium
+RG-IPAC-002,Ted Nelson / Xanadu not historically checked,Prevent hypertext romanticism.,Historical analogy overreach.,Knowledge Clump as linked knowledge,Trace; Artifact; Projection,historical verification,medium
+RG-IPAC-003,Knowledge Engineering boundary unclear,Define what IPaC adds or does not add.,Reinventing existing field.,Information production engineering,Knowledge Artifact; Canon,deep research,high
+RG-IPAC-004,Expert Systems comparison underdeveloped,Clarify rules/knowledge bases vs living knowledge.,False novelty or wrong analogy.,Knowledge Clumps more than document collections,Knowledge Clump,historical/methodological review,medium
+RG-IPAC-005,DSS/situation center lineage incomplete,Clarify decision/review relation without dashboard capture.,Execution pull.,Review-before-canon,Review; Decision,methodological review,medium
+RG-IPAC-006,Context Engineering needs stronger source grounding,Support context-pack/boot legitimacy.,Terminology fog.,Bootability is essential,Context Pack; Source-of-truth,deep research,high
+RG-IPAC-007,RAG / Knowledge Graph / Neo4j fit untested,Know whether graph/RAG supports or distracts.,Tool-driven conclusions.,Knowledge representation/tool support,Trace; Source-of-truth,technical validation,medium
+RG-IPAC-008,Obsidian/Git toolchain not field-tested as IPaC runtime,Separate useful tools from tool capture.,Tool capture.,Bootable artifacts and portability,Trace; Canon; Context Pack,technical/practical validation,high
+RG-IPAC-009,AI-native SDLC transfer needs mapping,Avoid borrowing software engineering authority too broadly.,Analogy overreach.,IPaC as lifecycle system,Controlled Rebuild; Trace,deep research,medium
+RG-IPAC-010,MCP not validated,Check value before import into environment.,Premature automation/security complexity.,MCP connectivity layer,Context Pack,technical validation,low
+RG-IPAC-011,No field evidence yet for Meaning Bottleneck,Critical for concept beyond internal coherence.,False maturity.,Meaning Bottleneck first hook,Living Meaning; Field Evidence,field validation,critical
+RG-IPAC-012,No external validation of Knowledge Clump language,Know whether concept travels externally.,Terminology fog / concept inflation.,Knowledge Clumps more than documents,Knowledge Clump,expert/user review,high

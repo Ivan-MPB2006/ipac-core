@@ -1,0 +1,5 @@
+artifact_id,artifact_name,wave,phase,status,import_location,notes
+W3-P7,Phase 7 — MVP/MVI Candidates Artifact,Wave 3,Phase 7,accepted-candidate,MVP/MVI Candidates; Validation Backlog,Core output of Wave 3
+W3-P7R,Phase 7R — Candidate Review & Selection Discipline,Wave 3,Phase 7R,deferred-draft,Parking Lot / Future Candidate Review,Useful but too deep for current moment
+W3-P7S,Phase 7S — MVI Test Design Protocol,Wave 3,Phase 7S,parked-premature,Deferred Drafts,Premature until Project core restored
+W3-P7T,Phase 7T — Controlled Test Run,Wave 3,Phase 7T,parked-premature,Deferred Drafts,Internal run; not clean-room evidence
