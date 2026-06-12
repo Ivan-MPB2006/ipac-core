@@ -11,3 +11,6 @@ desktop.ini
 *.tmp
 *.bak
 ~$*
+# IPaC generated operational export packs
+99_ATTACHMENTS_AND_EXPORTS/DR-*_DEEP_RESEARCH_INPUT_PACK_*/
+99_ATTACHMENTS_AND_EXPORTS/DR-*_DEEP_RESEARCH_INPUT_PACK_*.zip
