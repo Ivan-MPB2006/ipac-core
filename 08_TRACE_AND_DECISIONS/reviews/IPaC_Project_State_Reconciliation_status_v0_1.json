@@ -1,0 +1,24 @@
+{
+  "artifact_id": "IPAC-PROJECT-STATE-RECONCILIATION-PACK-001",
+  "artifact_type": "detachable_zip_package",
+  "status": "ready_for_download",
+  "version": "0.1",
+  "date": "2026-06-12",
+  "main_report": "IPaC_Project_State_Reconciliation_Report_v0_1.md",
+  "final_status": "PROJECT_SYNC_OK_WITH_NOTES",
+  "current_verdict": "IPAC_IS_OPERATING_LAYER_FOR_LIVING_KNOWLEDGE_WITH_KE_OVERLAP",
+  "canon_update_authorized": false,
+  "field_validated": false,
+  "execution_authorized": false,
+  "codex_authorized": false,
+  "mvi_authorized": false,
+  "perplexity_status": "deferred_by_cost_gate",
+  "next_recommended_action": "DR-002 — IPaC vs Context Engineering",
+  "download_precheck": {
+    "zip_integrity_test": "OK",
+    "exists": true,
+    "size_bytes": 9913,
+    "sha256": "656f835a0d3b1ff36fafab4e81a522665bbcb7d6242a2dbc5b9adf776da5d5d7",
+    "file_count": 6
+  }
+}
