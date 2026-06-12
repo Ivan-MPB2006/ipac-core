@@ -1,0 +1,20 @@
+{
+  "artifact_id": "IPAC-CODEX-READINESS-MAP-PACK-001",
+  "artifact_type": "detachable_zip_package",
+  "status": "CODEX_READINESS_MAP_READY",
+  "version": "0.1",
+  "created_utc": "2026-06-12T18:14:45.028274+00:00",
+  "codex_activation_authorized": false,
+  "execution_authorized": false,
+  "canon_update_authorized": false,
+  "mvi_authorized": false,
+  "field_validated": false,
+  "package_files": [
+    "README.md",
+    "MANIFEST.md",
+    "CHECKSUMS_SHA256.txt",
+    "docs/IPaC_Codex_Readiness_Map_v0_1.md",
+    "templates/CODEX_TASK_PACK_TEMPLATE_candidate_v0_1.md",
+    "status/IPaC_Codex_Readiness_Map_status_v0_1.json"
+  ]
+}
