@@ -1,0 +1,119 @@
+﻿param(
+    [string]$VaultRoot = (Get-Location).Path,
+    [string]$OutputDir = ""
+)
+
+$ErrorActionPreference = "Stop"
+
+if ([string]::IsNullOrWhiteSpace($OutputDir)) {
+    $OutputDir = Join-Path $VaultRoot "08_TRACE_AND_DECISIONS\codex_review_pack\check_results"
+}
+New-Item -ItemType Directory -Path $OutputDir -Force | Out-Null
+
+$packDir = Join-Path $VaultRoot "08_TRACE_AND_DECISIONS\codex_review_pack"
+$visibleDir = Join-Path $packDir "visible_result"
+$contractPath = Join-Path $packDir "IPAC_MVP0_MACHINE_CONTRACT_v0_1.json"
+
+$result = [ordered]@{
+    artifact_id = "IPAC_MVP0_CHECK_RESULT"
+    date = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+    vault_root = $VaultRoot
+    pack_dir = $packDir
+    status = "PASS"
+    checks = @()
+    page_faults = @()
+    blocked = @()
+    git_status_short = ""
+}
+
+function Add-Check($name, $status, $detail) {
+    $script:result.checks += [ordered]@{ name = $name; status = $status; detail = $detail }
+    if ($status -eq "PAGE_FAULT") { $script:result.page_faults += $name }
+    if ($status -eq "BLOCKED") { $script:result.blocked += $name }
+    if ($status -eq "PAGE_FAULT" -and $script:result.status -eq "PASS") { $script:result.status = "PARTIAL" }
+    if ($status -eq "BLOCKED") { $script:result.status = "BLOCKED" }
+}
+
+if (-not (Test-Path $packDir)) {
+    Add-Check "review_pack_dir" "BLOCKED" "Missing $packDir"
+}
+else {
+    Add-Check "review_pack_dir" "PASS" $packDir
+}
+
+if (-not (Test-Path $contractPath)) {
+    Add-Check "machine_contract" "BLOCKED" "Missing $contractPath"
+}
+else {
+    Add-Check "machine_contract" "PASS" $contractPath
+    $contract = Get-Content -Path $contractPath -Encoding UTF8 -Raw | ConvertFrom-Json
+
+    foreach ($f in $contract.required_review_pack_files) {
+        $p = Join-Path $packDir $f
+        if (Test-Path $p) { Add-Check "review_pack_file::$f" "PASS" $p }
+        else { Add-Check "review_pack_file::$f" "PAGE_FAULT" "Missing $p" }
+    }
+
+    foreach ($f in $contract.required_visible_result_files) {
+        $p = Join-Path $visibleDir $f
+        if (Test-Path $p) { Add-Check "visible_result::$f" "PASS" $p }
+        else { Add-Check "visible_result::$f" "PAGE_FAULT" "Missing $p" }
+    }
+
+    foreach ($f in $contract.required_review_pack_files) {
+        $p = Join-Path $packDir $f
+        if ((Test-Path $p) -and $f.EndsWith(".md")) {
+            $txt = Get-Content -Path $p -Encoding UTF8 -Raw
+            if ($txt -match "canon_status:\s*not_canon" -or $txt -match "not_canon") {
+                Add-Check "marker_not_canon::$f" "PASS" "not_canon present"
+            } else {
+                Add-Check "marker_not_canon::$f" "PAGE_FAULT" "not_canon marker not found"
+            }
+        }
+    }
+}
+
+try {
+    $gitDir = Join-Path $VaultRoot ".git"
+    if (Test-Path $gitDir) {
+        $result.git_status_short = (git -C $VaultRoot status --short | Out-String).Trim()
+        Add-Check "git_status_read" "PASS" "git status captured"
+    } else {
+        Add-Check "git_repo" "PAGE_FAULT" "No .git folder at $VaultRoot"
+    }
+} catch {
+    Add-Check "git_status_read" "BLOCKED" $_.Exception.Message
+}
+
+$jsonPath = Join-Path $OutputDir "IPAC_MVP0_CHECK_RESULT.json"
+$mdPath = Join-Path $OutputDir "IPAC_MVP0_CHECK_RESULT.md"
+
+$result | ConvertTo-Json -Depth 8 | Set-Content -Path $jsonPath -Encoding UTF8
+
+$lines = @()
+$lines += "# IPAC_MVP0_CHECK_RESULT"
+$lines += ""
+$lines += "Generated: $($result.date)"
+$lines += ""
+$lines += "Status: $($result.status)"
+$lines += ""
+$lines += "## Checks"
+foreach ($c in $result.checks) {
+    $lines += "- $($c.status) — $($c.name): $($c.detail)"
+}
+$lines += ""
+$lines += "## Git status --short"
+$lines += '```text'
+$lines += $result.git_status_short
+$lines += '```'
+$lines += ""
+$lines += "## Final vocabulary"
+$lines += '```text'
+$lines += "PASS / PARTIAL / PAGE_FAULT / BLOCKED"
+$lines += '```'
+$lines | Set-Content -Path $mdPath -Encoding UTF8
+
+Write-Host "MVP-0 check complete: $($result.status)"
+Write-Host $jsonPath
+Write-Host $mdPath
+
