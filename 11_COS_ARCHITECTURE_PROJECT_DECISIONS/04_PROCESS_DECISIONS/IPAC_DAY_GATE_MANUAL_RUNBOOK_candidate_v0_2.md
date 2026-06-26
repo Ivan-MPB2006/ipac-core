@@ -1,0 +1,215 @@
+﻿# IPaC DAY GATE MANUAL RUNBOOK
+## Ручной регламент закрытия / открытия рабочего дня
+
+```yaml
+artifact_id: IPAC-DAY-GATE-MANUAL-RUNBOOK-2026-06-24-v0.2
+artifact_type: supervisor_runbook
+status: candidate
+canon_status: not_canon
+resource_object_name: IPAC_DAY_GATE_MANUAL_RUNBOOK_candidate_v0_2
+resource_file_name: IPAC_DAY_GATE_MANUAL_RUNBOOK_candidate_v0_2.md
+created_date: 2026-06-24
+working_language: ru
+term_policy: English term must include Russian translation in parentheses
+supervisor_role: Project Supervisor (супервизор проекта)
+project_frame: IPaC OS (IPaC смысловая ОС)
+architecture_status: Architecture Candidate (архитектурный кандидат)
+git_commit_authorized: false
+human_approval_required_for_git_commit: true
+source_thread_anchor: 2026-06-24-IPaC_COS_SVC_LV01
+companion_appendix: APPENDIX_A_PROCESS_RULE_DAY_GATE_CLOSE_OPEN_FIRST_candidate_v0_1.md
+companion_process_description: DAY_GATE_CLOSE_OPEN_PROCESS_DESCRIPTION_2026-06-24_v0_1.md
+companion_process_diagram: DAY_GATE_CLOSE_OPEN_PROCESS_v0_1.mmd
+```
+
+---
+
+# 0. Статус документа
+
+Этот документ имеет статус **candidate (кандидат)** и **not canon (не канон)**.
+
+Он описывает ручной **Day Gate (дневной шлюз)** — шаблонный процесс закрытия предыдущего рабочего дня и открытия нового рабочего дня в контуре IPaC OS (IPaC смысловая ОС).
+
+Версия v0.2 сохраняет основной Runbook (регламент), но теперь явно ссылается на companion process documents (сопутствующие процессные документы): Appendix (приложение), Process Description (описание процесса) и Mermaid Process Scheme (Mermaid-схему процесса).
+
+---
+
+# 1. Назначение
+
+**Day Gate (дневной шлюз)** нужен для того, чтобы один рабочий день не перетекал в другой бесформенно.
+
+Главная формула:
+
+```text
+Рабочий день не продолжается мутным хвостом.
+Рабочий день закрывается, перевязывается и открывается заново
+через явный смысловой шлюз.
+```
+
+Day Gate (дневной шлюз) переводит работу в управляемую форму:
+
+```text
+Close Previous Day (закрыть предыдущий день)
+→ Save Carry-over (сохранить переносимые хвосты)
+→ Open Current Day (открыть текущий день)
+→ Create Daily Register / Ship Log (создать Дневной реестр / Бортовой журнал)
+→ Continue Without Cognitive Loss (продолжить без потери когнитивной высоты)
+```
+
+---
+
+# 2. Операционная модель
+
+## 2.1 Day Gate (дневной шлюз)
+
+Day Gate (дневной шлюз) — это не decorative separator (декоративный разделитель), а operational state transition (операционный переход состояния).
+
+Он выполняет четыре функции:
+
+```text
+1. отделяет предыдущую смысловую смену;
+2. фиксирует переносимые хвосты;
+3. открывает новый Daily Register / Ship Log (Дневной реестр / Бортовой журнал);
+4. задаёт активный фокус нового рабочего дня.
+```
+
+## 2.2 Day Closeout (закрытие дня)
+
+Day Closeout (закрытие дня) — это документ / запись, где предыдущий день закрывается как завершённый рабочий сегмент.
+
+Минимально он фиксирует:
+
+```text
+- дату закрываемого дня;
+- что закрывается;
+- какие хвосты переносятся;
+- какие статусы нельзя повышать;
+- что не проведено через Git (Git);
+- какие действия требуют Human Approval (человеческое одобрение).
+```
+
+## 2.3 Thread Start Anchor (якорь начала треда)
+
+Thread Start Anchor (якорь начала треда) — это файл или запись, фиксирующая состояние треда на начало рабочего дня.
+
+Важно: если содержимое anchor (якоря) не подкачано, Supervisor (супервизор) не должен делать вид, что прочитал его. Он фиксирует только факт сообщения пользователя.
+
+---
+
+# 3. Companion Process Documents (сопутствующие процессные документы)
+
+Для этого Runbook (регламента) теперь существуют отдельные process companion artifacts (сопутствующие процессные артефакты):
+
+```text
+1. APPENDIX_A_PROCESS_RULE_DAY_GATE_CLOSE_OPEN_FIRST_candidate_v0_1.md
+2. DAY_GATE_CLOSE_OPEN_PROCESS_DESCRIPTION_2026-06-24_v0_1.md
+3. DAY_GATE_CLOSE_OPEN_PROCESS_v0_1.mmd
+4. QA_DAY_GATE_PROCESS_APPENDIX_CHECK_2026-06-24_v0_1.md
+```
+
+Короткая формула:
+
+```text
+Runbook (регламент) говорит, что делать руками.
+Appendix (приложение) говорит, как это устроено как Process Rule (процессное правило).
+Process Description (описание процесса) восстанавливает маршрут.
+Mermaid Process Scheme (Mermaid-схема процесса) делает маршрут видимым с первого взгляда.
+```
+
+---
+
+# 4. Ручной процесс закрытия / открытия дня
+
+## 4.1 Pre-check (предварительная проверка)
+
+Перед изменением файлов:
+
+```powershell
+$VaultRoot = "C:\Users\Michael\Documents\50-00 IPaC\0. IPaC Project\IPaC_Obsidian_Vault_Str_v0_1_Pack"
+git -C $VaultRoot status --short
+```
+
+Supervisor (супервизор) не имеет права выдумывать live Git status (живой статус Git). Статус должен быть получен командой или snapshot (снимком состояния).
+
+## 4.2 Close Previous Day (закрытие предыдущего дня)
+
+Создать файл:
+
+```text
+08_TRACE_AND_DECISIONS/session_notes/DAY_CLOSEOUT_YYYY-MM-DD_v0_1.md
+```
+
+## 4.3 Open Day Gate (открытие дневного шлюза)
+
+Создать файл:
+
+```text
+08_TRACE_AND_DECISIONS/session_notes/DAY_GATE_YYYY-MM-DD_v0_1.md
+```
+
+## 4.4 Create Daily Register / Ship Log (создание Дневного реестра / Бортового журнала)
+
+Создать или дополнить файл:
+
+```text
+08_TRACE_AND_DECISIONS/session_notes/DAILY_REGISTER_YYYY-MM-DD_v0_1.md
+```
+
+## 4.5 Post-check (послеоперационная проверка)
+
+Проверить только созданные / изменённые файлы.
+
+---
+
+# 5. PowerShell script (PowerShell-скрипт)
+
+Полный executable script (исполняемый скрипт) находится в resource package (ресурсном пакете):
+
+```text
+RUN_IPAC_DAY_GATE_MANUAL_CLOSE_OPEN_2026-06-24_v0_1.ps1
+```
+
+Placement script (скрипт размещения) находится в resource package (ресурсном пакете):
+
+```text
+PLACE_IPAC_DAY_GATE_MANUAL_RUNBOOK_TO_VAULT_v0_1.ps1
+```
+
+---
+
+# 6. Optional Git Add (возможное Git-добавление)
+
+Только после отдельного Human Approval (человеческого одобрения).
+
+---
+
+# 7. Future Codex Template (будущий шаблон Codex)
+
+Когда Codex (Кодекс) / MCP (MCP) возьмёт эту операцию на себя, ручной процесс должен стать шаблонным вызовом:
+
+```text
+DayGate.ClosePreviousDay(
+  previous_date = YYYY-MM-DD,
+  mode = closeout_candidate
+)
+
+DayGate.OpenCurrentDay(
+  date = YYYY-MM-DD,
+  time = HH:MM,
+  thread_start_anchor = FILE_OR_NOTE_ID,
+  create_daily_register = true,
+  git_commit = false
+)
+```
+
+---
+
+# 8. Status (статус)
+
+```text
+RUNBOOK_STATUS: candidate
+CANON_STATUS: not_canon
+COMPANION_PROCESS_DOCS_PRESENT: true
+GIT_ACTIONS_AUTHORIZED: false
+HUMAN_APPROVAL_REQUIRED: true
+```

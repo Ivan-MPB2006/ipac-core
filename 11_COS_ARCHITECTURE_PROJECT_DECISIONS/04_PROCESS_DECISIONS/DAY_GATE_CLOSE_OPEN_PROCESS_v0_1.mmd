@@ -1,0 +1,55 @@
+﻿flowchart TD
+    START(["Day Transition Trigger / Сигнал перехода дня"])
+
+    subgraph S0["0. Status Guard / Статусный предохранитель"]
+        A0["Set status<br/>candidate (кандидат), not_canon (не канон)"]
+        A1["Block automatic Git Action<br/>Запретить автоматическое Git-действие"]
+    end
+
+    subgraph S1["1. Intake / Приём"]
+        B0["Receive human fact<br/>Получить факт от человека"]
+        B1["Set previous_date and current_date<br/>Задать previous_date и current_date"]
+        B2["Set opening_time and thread_start_anchor<br/>Задать opening_time и thread_start_anchor"]
+    end
+
+    subgraph S2["2. Pre-check / Предварительная проверка"]
+        C0["Read live Git status<br/>Считать живой статус Git"]
+        C1{"Anchor file loaded?<br/>Файл якоря подкачан?"}
+        C2["Mark anchor as human_reported_fact<br/>Отметить якорь как human_reported_fact"]
+        C3["Use loaded file carefully<br/>Аккуратно использовать подкачанный файл"]
+    end
+
+    subgraph S3["3. Previous Day Closure / Закрытие предыдущего дня"]
+        D0["Qualify previous day<br/>Квалифицировать предыдущий день"]
+        D1["Create DAY_CLOSEOUT file<br/>Создать файл DAY_CLOSEOUT"]
+        D2["Write carry-over inventory<br/>Записать инвентаризацию переносимых хвостов"]
+    end
+
+    subgraph S4["4. Current Day Opening / Открытие текущего дня"]
+        E0["Create DAY_GATE file<br/>Создать файл DAY_GATE"]
+        E1["Create or update DAILY_REGISTER<br/>Создать или обновить DAILY_REGISTER"]
+        E2["Append opening event<br/>Добавить событие открытия"]
+    end
+
+    subgraph S5["5. Verification / Проверка"]
+        F0["Post-check changed files<br/>Проверить изменённые файлы"]
+        F1{"Files valid?<br/>Файлы корректны?"}
+        F2["Correction pass<br/>Исправительный проход"]
+        F3["Human verification<br/>Человеческая проверка"]
+    end
+
+    subgraph S6["6. Git and Save Point / Git и точка сохранения"]
+        G0{"Git action approved?<br/>Git-действие одобрено?"}
+        G1["Optional Git add<br/>Возможное Git-добавление"]
+        G2["Optional Git commit<br/>Возможная Git-проводка"]
+        G3["Backtrace / Save Point<br/>Обратная трассировка / точка сохранения"]
+    end
+
+    START --> A0 --> A1 --> B0 --> B1 --> B2 --> C0 --> C1
+    C1 -- "No / нет" --> C2 --> D0
+    C1 -- "Yes / да" --> C3 --> D0
+    D0 --> D1 --> D2 --> E0 --> E1 --> E2 --> F0 --> F1
+    F1 -- "No / нет" --> F2 --> D1
+    F1 -- "Yes / да" --> F3 --> G0
+    G0 -- "No / нет" --> G3
+    G0 -- "Yes / да" --> G1 --> G2 --> G3
