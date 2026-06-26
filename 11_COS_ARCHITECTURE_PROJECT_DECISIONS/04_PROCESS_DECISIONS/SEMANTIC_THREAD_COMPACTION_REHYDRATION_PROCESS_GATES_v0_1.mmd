@@ -1,0 +1,52 @@
+flowchart TD
+    START["Active Thread / Активный тред"]
+    DAILY["Day Closeout / Закрытие дня"]
+    REGISTER["Daily Register / Дневной реестр"]
+    RESONANCE["Resonance Points / Резонансные точки"]
+    HEALTH["Thread Health Check / Проверка здоровья треда"]
+    PDF["PDF Page Count / Счёт страниц PDF"]
+    SCRUM{"Scrum Boundary? / Граница скрама?"}
+    CRISIS{"Crisis Trigger? / Кризисный триггер?"}
+
+    CONTINUE["Continue Same Thread / Продолжить тот же тред"]
+
+    subgraph Gates["Process Gates / Процессные шлюзы"]
+        G0["G0 Inflection Gate / Шлюз точки перегиба"]
+        G1["G1 Boundary Gate / Шлюз границы"]
+        G2["G2 Compaction Gate / Шлюз свёртки"]
+        G3["G3 Alienation Gate / Шлюз отчуждения"]
+        G4["G4 Placement Gate / Шлюз размещения"]
+        G5["G5 Context Paging Gate / Шлюз контекстной подкачки"]
+        G6["G6 Rehydration Gate / Шлюз повторного развёртывания"]
+        G7["G7 Human Approval Gate / Шлюз человеческого одобрения"]
+    end
+
+    MEMORY["Obsidian Vault / Хранилище Obsidian"]
+    PAGES["Context Pages / Страницы контекста"]
+    SCENE["New Thread or Scene / Новый тред или сцена"]
+    GIT["Optional Git Action / Возможное Git-действие"]
+
+    START --> DAILY
+    DAILY --> REGISTER
+    DAILY --> RESONANCE
+    REGISTER --> HEALTH
+    RESONANCE --> HEALTH
+    HEALTH --> PDF
+    PDF --> SCRUM
+    PDF --> CRISIS
+
+    SCRUM -- "no / нет" --> CONTINUE
+    CRISIS -- "no / нет" --> CONTINUE
+
+    SCRUM -- "yes / да" --> G0
+    CRISIS -- "yes / да" --> G0
+
+    G0 --> G1 --> G2 --> G3 --> G4
+    G4 --> MEMORY
+    MEMORY --> G5
+    G5 --> PAGES
+    PAGES --> G6
+    G6 --> SCENE
+
+    G4 --> G7
+    G7 --> GIT
