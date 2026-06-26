@@ -1,0 +1,32 @@
+﻿# DAY CLOSEOUT — 2026-06-23
+## Закрытие рабочего дня
+
+```yaml
+artifact_id: DAY-CLOSEOUT-2026-06-23-v0.1
+artifact_type: day_closeout
+status: candidate
+canon_status: not_canon
+closed_by: manual_supervisor_runbook
+next_day: 2026-06-24
+```
+
+# Meaning (смысл)
+
+Рабочий день 2026-06-23 закрывается как смысловая смена.
+Его результаты не теряются, но не смешиваются неявно с новым рабочим днём.
+
+# Closure Rule (правило закрытия)
+
+```text
+Previous Day (предыдущий день) is closed.
+Carry-over (переносимые хвосты) must be explicit.
+No silent context bleed (без скрытого перетекания контекста).
+No premature canonization (без преждевременной канонизации).
+No Git commit (Git-проводка) without Human Approval (человеческое одобрение).
+```
+
+# Status (статус)
+
+```text
+DAY_2026-06-23_CLOSED_AS_WORKING_SEGMENT
+``
