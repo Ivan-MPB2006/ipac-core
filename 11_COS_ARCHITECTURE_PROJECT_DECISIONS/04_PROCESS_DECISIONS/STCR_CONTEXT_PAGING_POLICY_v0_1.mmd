@@ -1,0 +1,29 @@
+flowchart TD
+    A["Scene / Rehydration Need<br/>Потребность сцены / повторного развёртывания"] --> B["Candidate Pages<br/>Страницы-кандидаты"]
+
+    B --> C["Remove Invalidated Pages<br/>Исключить инвалидированные страницы"]
+    C --> D["Apply Forbidden Filter<br/>Применить фильтр запрещённых страниц"]
+    D --> E["Check Staleness<br/>Проверить устаревание"]
+    E --> F["Score Pages<br/>Оценить страницы"]
+
+    F --> G{"Required Status Pages present?<br/>Есть обязательные статусные страницы?"}
+    G -->|"No / Нет"| H["Page Fault<br/>Промах страницы"]
+    H --> I["Recover Missing Page<br/>Восстановить недостающую страницу"]
+    I --> F
+
+    G -->|"Yes / Да"| J["Build Minimum Rehydration Set<br/>Собрать минимальный набор повторного развёртывания"]
+    J --> K["Add High Resonance Pages<br/>Добавить высокорезонансные страницы"]
+    K --> L{"Context Budget OK?<br/>Бюджет контекста нормален?"}
+
+    L -->|"No / Нет"| M["Move Overflow to Optional<br/>Перенести избыток в дополнительные"]
+    M --> N["Context Bundle<br/>Контекстный пакет"]
+
+    L -->|"Yes / Да"| N
+
+    N --> O["QA Checklist<br/>Контрольный список качества"]
+    O --> P{"Human/Supervisor Review?<br/>Человеческое / супервизорское рассмотрение?"}
+
+    P -->|"Fail / Не пройдено"| Q["Correction Pass<br/>Исправительный проход"]
+    Q --> F
+
+    P -->|"Pass / Пройдено"| R["Load into Scene / Thread<br/>Подкачать в сцену / тред"]
