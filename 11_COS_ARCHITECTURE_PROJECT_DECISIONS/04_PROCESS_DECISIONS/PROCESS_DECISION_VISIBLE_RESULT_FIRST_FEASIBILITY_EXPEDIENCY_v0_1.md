@@ -1,0 +1,22 @@
+﻿# PROCESS DECISION - Visible Result First, Feasibility, Expediency v0.1
+
+```yaml
+artifact_type: cos_architecture_project_decision_record
+status: decision_candidate
+canon_status: not_canon
+decision_status: not_decided
+publisher: Office of the Chief Architect of Semantic OS
+source: Project Supervisor chat, Human Decision, 2026-06-23
+```
+
+## Decision statement
+
+First prove feasibility. Then prove expediency. Only after both approvals, improve and polish.
+
+## Boundary
+
+This is not canon. This does not authorize git commit. This does not launch Codex.
+
+## Status
+
+PROCESS_DECISION_CANDIDATE_CREATED

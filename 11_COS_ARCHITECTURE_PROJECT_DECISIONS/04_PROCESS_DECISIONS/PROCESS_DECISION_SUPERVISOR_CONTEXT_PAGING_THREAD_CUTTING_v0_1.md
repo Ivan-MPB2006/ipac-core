@@ -1,0 +1,24 @@
+﻿# PROCESS DECISION - Supervisor Context Paging and Thread Cutting v0.1
+
+```yaml
+artifact_type: cos_architecture_project_decision_record
+status: decision_candidate
+canon_status: not_canon
+decision_status: not_decided
+publisher: Office of the Chief Architect of Semantic OS
+source: Project Supervisor chat, Human Decision, 2026-06-23
+```
+
+## Decision statement
+
+Thread cutting is not memory loss. Thread cutting is vector preservation.
+
+Each sprint needs a sharp high-resonance Context Working Set.
+
+## Boundary
+
+This is not canon. This does not delete memory. Memory lives in Vault, Git, and Context Working Sets.
+
+## Status
+
+PROCESS_DECISION_CANDIDATE_CREATED
