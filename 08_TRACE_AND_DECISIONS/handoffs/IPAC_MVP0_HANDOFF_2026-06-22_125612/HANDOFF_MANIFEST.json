@@ -1,0 +1,136 @@
+﻿{
+    "artifact_id":  "IPAC_MVP0_HANDOFF_MANIFEST",
+    "artifact_type":  "repeatable_handoff_manifest",
+    "status":  "candidate",
+    "canon_status":  "not_canon",
+    "generated":  "2026-06-22 12:56:12",
+    "source_vault":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack",
+    "source_pack":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\codex_review_pack",
+    "handoff_dir":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612",
+    "required_missing":  [
+
+                         ],
+    "files":  [
+                  {
+                      "relative_path":  "README_RUN_CODEX_REVIEW.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\README_RUN_CODEX_REVIEW.md",
+                      "size_bytes":  284,
+                      "sha256":  "F64ACEDD731453307EBD27BC7265FF4D216FCF79A1C3AFB39724FC1912862132",
+                      "last_write_time":  "2026-06-22 12:56:12"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\CODEX_BOUNDARY_CONDITIONS_v0_1.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\CODEX_BOUNDARY_CONDITIONS_v0_1.md",
+                      "size_bytes":  1476,
+                      "sha256":  "9E16D6265F2CB7FC7CDA17B184DE790D1583C74104BB5A7AF417FEE63AEB4F66",
+                      "last_write_time":  "2026-06-21 19:47:22"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\CODEX_MCP_FEASIBILITY_MATRIX_v0_1.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\CODEX_MCP_FEASIBILITY_MATRIX_v0_1.md",
+                      "size_bytes":  4694,
+                      "sha256":  "D32E8895D012D45398B7310F20D497E74CC6A8D00AF0704C530D974F270A7275",
+                      "last_write_time":  "2026-06-21 18:19:22"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\CODEX_REVIEW_PACK_MANIFEST_v0_1.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\CODEX_REVIEW_PACK_MANIFEST_v0_1.md",
+                      "size_bytes":  2136,
+                      "sha256":  "E4274D19CC922E4725D4859492873D47018EF16DAA1C72053B1FDBF11F25AEB2",
+                      "last_write_time":  "2026-06-21 19:47:22"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\CODEX_REVIEW_PROMPT_v0_1.txt",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\CODEX_REVIEW_PROMPT_v0_1.txt",
+                      "size_bytes":  1806,
+                      "sha256":  "9C264771F704DD9AB364D472E774D87E0F40E7D4EA0D1323BCAA41FA2D28EAD2",
+                      "last_write_time":  "2026-06-21 19:47:22"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\CODEX_REVIEW_QUESTIONS_v0_1.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\CODEX_REVIEW_QUESTIONS_v0_1.md",
+                      "size_bytes":  2002,
+                      "sha256":  "DCC18F0B0E26143751F348403113E3F6DA477CBD3274B181A6D782DAB821A2B2",
+                      "last_write_time":  "2026-06-21 19:47:22"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\IPAC_MVP0_MACHINE_CONTRACT_v0_1.json",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\IPAC_MVP0_MACHINE_CONTRACT_v0_1.json",
+                      "size_bytes":  1378,
+                      "sha256":  "C4A1EDC3BAC52D9D711ABF7D5544EED7E56230DB212B7E4461E3EC23B3F28200",
+                      "last_write_time":  "2026-06-21 23:21:03"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\IPAC_OS_MVP0_DEMONSTRATION_SCENARIO_v0_1.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\IPAC_OS_MVP0_DEMONSTRATION_SCENARIO_v0_1.md",
+                      "size_bytes":  2594,
+                      "sha256":  "212D5DB8B174C15D05B0C86187C67B8E73CBCC792D9DF8BB57ACA2857067419D",
+                      "last_write_time":  "2026-06-21 19:47:22"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\SYSTEM_INTERACTION_MAP_ASCII_v0_1.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\SYSTEM_INTERACTION_MAP_ASCII_v0_1.md",
+                      "size_bytes":  6343,
+                      "sha256":  "E0A8DE2EECC013182B216432D8237F46F05E805BA02906E837C785E59068805E",
+                      "last_write_time":  "2026-06-21 18:19:12"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\VISIBLE_RESULT_INDEX_v0_1.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\VISIBLE_RESULT_INDEX_v0_1.md",
+                      "size_bytes":  1420,
+                      "sha256":  "73A8429867C5FE101973EE3FB9A5AFF50373AFA1562B5D56511858A282A3C930",
+                      "last_write_time":  "2026-06-21 19:47:22"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\VISIBLE_RESULT_INDEX_v0_2.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\VISIBLE_RESULT_INDEX_v0_2.md",
+                      "size_bytes":  856,
+                      "sha256":  "E3472E1C40578919D1C035451B4D08B926E73689CD8519255AB9259E6263B18C",
+                      "last_write_time":  "2026-06-21 23:21:03"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\check_results\\IPAC_MVP0_CHECK_RESULT.json",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\check_results\\IPAC_MVP0_CHECK_RESULT.json",
+                      "size_bytes":  11066,
+                      "sha256":  "D99F3EC14BEB17051C49582CF043B0F0C1110FB26FA71DD7D5B0835E0998641F",
+                      "last_write_time":  "2026-06-22 11:41:25"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\check_results\\IPAC_MVP0_CHECK_RESULT.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\check_results\\IPAC_MVP0_CHECK_RESULT.md",
+                      "size_bytes":  6122,
+                      "sha256":  "95215B96035186165C9D3AA41C29385AB47F673D5566B5EEB79917A5A216A21E",
+                      "last_write_time":  "2026-06-22 11:41:25"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\visible_result\\IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.docx",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\visible_result\\IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.docx",
+                      "size_bytes":  42862,
+                      "sha256":  "B6885E4150485BC473BF9874D4E8864AB4A2A73D10BC37BBE1EEB80F7FFA0717",
+                      "last_write_time":  "2026-06-21 23:21:03"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\visible_result\\IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.md",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\visible_result\\IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.md",
+                      "size_bytes":  18537,
+                      "sha256":  "E10FC0EF06FAE0E1E63613FB0BC43B5BD7B5AD9578599C12C179E5075BBF45C5",
+                      "last_write_time":  "2026-06-21 23:21:03"
+                  },
+                  {
+                      "relative_path":  "codex_review_pack\\visible_result\\IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.pdf",
+                      "full_path":  "C:\\Users\\Michael\\Documents\\50-00 IPaC\\0. IPaC Project\\IPaC_Obsidian_Vault_Str_v0_1_Pack\\08_TRACE_AND_DECISIONS\\handoffs\\IPAC_MVP0_HANDOFF_2026-06-22_125612\\codex_review_pack\\visible_result\\IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.pdf",
+                      "size_bytes":  135861,
+                      "sha256":  "A2791E31797388A0E3E4CD4D6120F2923AD6693BFE412833F427AE00BF577E2D",
+                      "last_write_time":  "2026-06-21 23:21:03"
+                  }
+              ],
+    "boundaries":  [
+                       "no git add",
+                       "no commit",
+                       "no push",
+                       "no canonization",
+                       "no architecture rewrite",
+                       "no Project Instructions edits",
+                       "no Project Resources edits"
+                   ]
+}
