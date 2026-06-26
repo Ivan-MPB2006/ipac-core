@@ -1,0 +1,212 @@
+# DAY GATE CLOSE / OPEN PROCESS DESCRIPTION v0.1
+## Описание процесса закрытия / открытия дня через Day Gate (дневной шлюз)
+
+```yaml
+artifact_id: DAY-GATE-CLOSE-OPEN-PROCESS-DESCRIPTION-2026-06-24-v0.1
+artifact_type: process_description / day_gate / supervisor_operation
+status: candidate
+canon_status: not_canon
+parent_document: IPAC_DAY_GATE_MANUAL_RUNBOOK_candidate_v0_2.md
+related_appendix: APPENDIX_A_PROCESS_RULE_DAY_GATE_CLOSE_OPEN_FIRST_candidate_v0_1.md
+related_diagram: DAY_GATE_CLOSE_OPEN_PROCESS_v0_1.mmd
+primary_required_placement: 11_COS_ARCHITECTURE_PROJECT_DECISIONS/04_PROCESS_DECISIONS/
+human_approval_required: true
+git_actions_authorized: false
+```
+
+---
+
+# 1. Назначение
+
+Этот документ нужен, чтобы человек, Supervisor (супервизор) или будущий Codex/MCP (Кодекс/MCP) могли восстановить Day Gate Process (процесс дневного шлюза) без чтения всего Runbook (регламента).
+
+Он отвечает на вопрос:
+
+```text
+Что именно делать, когда один рабочий день должен быть закрыт,
+а следующий открыт без потери когнитивной высоты?
+```
+
+---
+
+# 2. Trigger (запуск процесса)
+
+Process (процесс) запускается, когда появляется один из сигналов:
+
+```text
+- завершён рабочий день и нужен closeout (закрывающий проход);
+- начинается новый рабочий день и нужен explicit opening (явный запуск);
+- текущий тред нужно сегментировать и перевязать;
+- есть Thread Start Anchor (якорь начала треда);
+- Human Architect (человеческий архитектор) просит выполнить Day Gate (дневной шлюз);
+- нужно подготовить будущую автоматизацию через Codex/MCP (Кодекс/MCP).
+```
+
+---
+
+# 3. Inputs (входы)
+
+Минимальные входы:
+
+```text
+1. previous_date (предыдущая дата);
+2. current_date (текущая дата);
+3. opening_time (время открытия);
+4. Thread Start Anchor (якорь начала треда);
+5. VaultRoot (корень Vault / хранилища);
+6. Human Instruction (человеческая инструкция);
+7. live Git status (живой статус Git), если доступен.
+```
+
+Если anchor (якорь) не подкачан как файл, допускается только human_reported_fact (человеком сообщённый факт), а не симуляция чтения.
+
+---
+
+# 4. Roles (роли)
+
+```text
+Human Architect (человеческий архитектор): сообщает факт, проверяет результаты, разрешает Git Action (Git-действие).
+Supervisor (супервизор): управляет маршрутами, статусами, запретами, долгами и смысловой перевязкой.
+Run Script (исполняемый скрипт): выполняет файловые шаги.
+Vault (хранилище): принимает артефакты дня.
+Git (Git): фиксирует изменения только после одобрения.
+```
+
+---
+
+# 5. Main Route (главный маршрут)
+
+```text
+0. Status Guard (статусный предохранитель)
+1. Intake day transition fact (принять факт перехода дня)
+2. Pre-check repository state (предварительно проверить состояние репозитория)
+3. Qualify previous day (квалифицировать предыдущий день)
+4. Write closeout file (записать файл закрытия)
+5. Write carry-over block (записать блок переносимых хвостов)
+6. Qualify Thread Start Anchor (квалифицировать якорь начала треда)
+7. Write day gate file (записать файл дневного шлюза)
+8. Create or update Daily Register (создать или обновить Дневной реестр)
+9. Write opening event (записать событие открытия)
+10. Verify created files (проверить созданные файлы)
+11. Human verification (человеческая проверка)
+12. optional Git action (возможное Git-действие)
+13. Backtrace / Save Point (обратная трассировка / точка сохранения)
+```
+
+---
+
+# 6. Phase Details (детали фаз)
+
+## Phase 0 — Status Guard (статусный предохранитель)
+
+Установить:
+
+```text
+candidate (кандидат)
+not_canon (не канон)
+no automatic Git commit (без автоматической Git-проводки)
+```
+
+## Phase 1 — Intake (приём)
+
+Зафиксировать факт перехода дня. Записать дату, время, anchor (якорь) и контекст.
+
+## Phase 2 — Pre-check (предварительная проверка)
+
+Проверить live Git status (живой статус Git). Не делать предположений.
+
+## Phase 3 — Previous Day Qualification (квалификация предыдущего дня)
+
+Определить, что именно закрывается: рабочий день, сегмент треда, открытая смена.
+
+## Phase 4 — Write Closeout File (запись файла закрытия)
+
+Создать `DAY_CLOSEOUT_YYYY-MM-DD_v0_1.md` и зафиксировать:
+
+```text
+- смысл закрытия;
+- closure rule (правило закрытия);
+- carry-over (переносимые хвосты);
+- запреты на повышение статуса;
+- запрет на Git commit (Git-проводку) без одобрения.
+```
+
+## Phase 5 — Carry-over Block (блок переносимых хвостов)
+
+Зафиксировать, что переносится в новый день и в каком статусе.
+
+## Phase 6 — Thread Start Anchor Qualification (квалификация якоря начала треда)
+
+Если anchor (якорь) не читался как файл, указать `human_reported_fact`.
+
+## Phase 7 — Write Day Gate File (запись файла дневного шлюза)
+
+Создать `DAY_GATE_YYYY-MM-DD_v0_1.md` и зафиксировать:
+
+```text
+- рабочий день открыт;
+- anchor (якорь) указан;
+- активный фокус задан;
+- метод работы задан.
+```
+
+## Phase 8 — Daily Register Opening (открытие Дневного реестра)
+
+Создать или дополнить `DAILY_REGISTER_YYYY-MM-DD_v0_1.md`.
+
+## Phase 9 — Opening Event (событие открытия)
+
+Добавить явную запись с `EVENT_ID`, типом события, фактографией, интерпретацией, статусом и next (следующим шагом).
+
+## Phase 10 — Verification (проверка)
+
+Проверить, что нужные файлы созданы и отражены в Git status (статусе Git).
+
+## Phase 11 — Human Verification (человеческая проверка)
+
+Человек проверяет содержимое, размещение и корректность.
+
+## Phase 12 — Optional Git Action (возможное Git-действие)
+
+Только если есть отдельное Human Approval (человеческое одобрение).
+
+## Phase 13 — Backtrace / Save Point (обратная трассировка / точка сохранения)
+
+Зафиксировать, что операция проведена, и где точка восстановления.
+
+---
+
+# 7. Outputs (выходы)
+
+```text
+- DAY_CLOSEOUT file (файл закрытия дня);
+- DAY_GATE file (файл дневного шлюза);
+- DAILY_REGISTER file (файл Дневного реестра);
+- opening event block (блок события открытия);
+- post-check Git status (послеоперационный статус Git);
+- human verification note (заметка человеческой проверки).
+```
+
+---
+
+# 8. Completion Criteria (критерии завершения)
+
+```text
+[PASS] рабочий день отделён от предыдущего;
+[PASS] anchor (якорь) указан;
+[PASS] переносимые хвосты явно зафиксированы;
+[PASS] Daily Register (Дневной реестр) открыт;
+[PASS] Supervisor continuity (непрерывность супервизора) сохранена;
+[PASS] Git commit (Git-проводка) не произведена без Human Approval (человеческого одобрения).
+```
+
+---
+
+# 9. Status (статус)
+
+```text
+PROCESS_DESCRIPTION_STATUS: candidate
+CANON_STATUS: not_canon
+GIT_ACTIONS_AUTHORIZED: false
+HUMAN_APPROVAL_REQUIRED: true
+```
