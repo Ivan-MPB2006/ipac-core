@@ -1,0 +1,48 @@
+{
+  "artifact_id": "IPAC_MVP0_MACHINE_CONTRACT_v0_1",
+  "artifact_type": "machine_readable_contract",
+  "status": "candidate",
+  "canon_status": "not_canon",
+  "date": "2026-06-21",
+  "required_review_pack_files": [
+    "CODEX_REVIEW_PACK_MANIFEST_v0_1.md",
+    "IPAC_OS_MVP0_DEMONSTRATION_SCENARIO_v0_1.md",
+    "CODEX_REVIEW_QUESTIONS_v0_1.md",
+    "CODEX_BOUNDARY_CONDITIONS_v0_1.md",
+    "VISIBLE_RESULT_INDEX_v0_1.md",
+    "SYSTEM_INTERACTION_MAP_ASCII_v0_1.md",
+    "CODEX_MCP_FEASIBILITY_MATRIX_v0_1.md",
+    "CODEX_REVIEW_PROMPT_v0_1.txt"
+  ],
+  "required_visible_result_files": [
+    "IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.pdf",
+    "IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.md",
+    "IPAC_SEMANTIC_OS_VISIBLE_RESULT_REVIEW_DRAFT_v0_1.docx"
+  ],
+  "required_markers": {
+    "status": "candidate",
+    "canon_status": "not_canon"
+  },
+  "forbidden_actions": [
+    "git add",
+    "git commit",
+    "git push",
+    "canonization",
+    "project resources edit",
+    "project instructions edit",
+    "architecture core rewrite"
+  ],
+  "allowed_outputs": [
+    "IPAC_MVP0_CHECK_RESULT.json",
+    "IPAC_MVP0_CHECK_RESULT.md",
+    "CODEX_FEASIBILITY_CHECK_REPORT_v0_1.md",
+    "CODEX_EXPEDIENCY_REVIEW_v0_1.md",
+    "CODEX_MVP0_TASK_PACK_PROPOSAL_v0_1.md"
+  ],
+  "final_status_vocabulary": [
+    "PASS",
+    "PARTIAL",
+    "PAGE_FAULT",
+    "BLOCKED"
+  ]
+}
