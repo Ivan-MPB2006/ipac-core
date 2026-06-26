@@ -1,0 +1,29 @@
+flowchart TD
+    A["Failure Signal<br/>Сигнал отказа"] --> B["Detect and Name<br/>Обнаружить и назвать"]
+    B --> C{"Severity?<br/>Тяжесть?"}
+
+    C -->|"S1/S2"| D["Register and Monitor<br/>Зарегистрировать и наблюдать"]
+    C -->|"S3"| E["Immediate Correction<br/>Немедленное исправление"]
+    C -->|"S4"| F["Critical Stop<br/>Критическая остановка"]
+
+    D --> G["Update Register<br/>Обновить реестр"]
+    E --> H["Correction Pass<br/>Исправительный проход"]
+    F --> I["Freeze Risky Action<br/>Заморозить рискованное действие"]
+
+    I --> J["Preserve Evidence<br/>Сохранить свидетельства"]
+    H --> J
+    G --> K["Return to Mainline<br/>Вернуться к магистрали"]
+    J --> L{"Type?<br/>Тип?"}
+
+    L -->|"Status Collapse / Canon Leakage"| M["Restore candidate / not_canon<br/>Восстановить кандидат / не канон"]
+    L -->|"Thread Sprawl Shock"| N["Prepare Scrum Boundary<br/>Подготовить границу скрама"]
+    L -->|"False Resonance / Overpaging"| O["Context Paging Repair<br/>Ремонт контекстной подкачки"]
+    L -->|"Rehydration Failure"| P["Rebuild Rehydration Brief<br/>Пересобрать бриф повторного развёртывания"]
+    L -->|"Branch Hijack"| Q["Park Branch<br/>Припарковать ветку"]
+
+    M --> R["Human Architect Review<br/>Рассмотрение человеческим архитектором"]
+    N --> R
+    O --> R
+    P --> R
+    Q --> K
+    R --> K
