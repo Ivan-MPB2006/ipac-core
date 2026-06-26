@@ -1,0 +1,57 @@
+﻿# QA CHECK — Day Gate Process Appendix Package v0.1
+## Проверка пакета процессного приложения Day Gate (дневного шлюза)
+
+```yaml
+artifact_id: QA-DAY-GATE-PROCESS-APPENDIX-CHECK-2026-06-24-v0.1
+artifact_type: qa_report
+status: candidate
+canon_status: not_canon
+scope:
+  - IPAC_DAY_GATE_MANUAL_RUNBOOK_candidate_v0_2.md
+  - APPENDIX_A_PROCESS_RULE_DAY_GATE_CLOSE_OPEN_FIRST_candidate_v0_1.md
+  - DAY_GATE_CLOSE_OPEN_PROCESS_DESCRIPTION_2026-06-24_v0_1.md
+  - DAY_GATE_CLOSE_OPEN_PROCESS_v0_1.mmd
+human_review_required: true
+git_actions_authorized: false
+```
+
+---
+
+# 1. QA Goal (цель контроля качества)
+
+Проверить, что у Day Gate Manual Runbook (ручного регламента дневного шлюза) теперь есть явно оформленный Process Stack (процессный стек): Appendix (приложение), Process Description (описание процесса) и Mermaid Process Scheme (Mermaid-схема процесса).
+
+---
+
+# 2. Checks (проверки)
+
+```text
+[PASS] Главный Runbook (регламент) существует в версии v0.2.
+[PASS] В Runbook (регламенте) есть ссылки на companion process documents (сопутствующие процессные документы).
+[PASS] Appendix (приложение) существует как отдельный цельный документ.
+[PASS] Mermaid Process Scheme (Mermaid-схема процесса) встроена в Appendix (приложение).
+[PASS] Mermaid Process Scheme (Mermaid-схема процесса) вынесена в отдельный .mmd file (файл).
+[PASS] Process Description (описание процесса) существует как отдельный документ.
+[PASS] Статус candidate (кандидат), not_canon (не канон) удержан.
+[PASS] Git commit (Git-проводка) не авторизована.
+```
+
+---
+
+# 3. Findings (замечания)
+
+```text
+No blocking findings (нет блокирующих замечаний).
+Open debt (открытый долг): позже обобщить Run Script (исполняемый скрипт) из конкретного дня 2026-06-24 в parameterized template (параметризованный шаблон) v0.2.
+```
+
+---
+
+# 4. Status (статус)
+
+```text
+QA_GREEN_WITH_OPEN_DEBT
+READY_FOR_HUMAN_REVIEW_AS_CANDIDATE
+NOT_READY_FOR_CANONIZATION
+NOT_AUTHORIZED_FOR_GIT_COMMIT
+```
